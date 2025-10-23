@@ -4,11 +4,19 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Responsive + A11y Navbar</title>
+		<link rel="stylesheet" href="../normalize.css" />
 		<link rel="stylesheet" href="style.css" />
+		<script defer src="script.js"></script>
 	</head>
 	<body>
 		<header class="header">
-			<nav class="navigation">
+			<button class="menu_button open_button" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Open Menu">
+				<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" /></svg>
+			</button>
+			<nav id="mainNav" class="navigation">
+				<button class="menu_button close_button" aria-label="Close Menu">
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" /></svg>
+				</button>
 				<ul class="main_nav">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
@@ -20,6 +28,8 @@
 		</header>
 		<main class="main">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deserunt dolorum explicabo, officia excepturi impedit illum, inventore odio autem totam ullam. Magnam natus excepturi nisi modi saepe fugiat perspiciatis magni ipsum debitis neque. Alias unde voluptate eaque sit. Inventore repudiandae doloremque et cum nulla unde architecto minima! Harum aliquam est cum, temporibus fuga, quisquam ut molestiae alias inventore veniam sequi dicta reprehenderit placeat esse autem enim. Odio laboriosam quam dolorem nesciunt sed omnis quidem saepe ipsam, iusto sapiente repellendus nam voluptates, veniam labore consectetur, voluptatum impedit unde at tempora vero quos corporis quae earum sunt. Facere excepturi exercitationem ullam omnis nemo obcaecati delectus! Nam cumque, error architecto praesentium iste tenetur quis eos nemo assumenda animi, soluta rerum quos ea accusantium quia excepturi deserunt nostrum sunt.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ab iste quibusdam! Doloremque totam nobis, et laborum deserunt beatae voluptas qui impedit laudantium neque necessitatibus, nisi labore numquam harum possimus fuga incidunt optio. Reiciendis repellendus, voluptatem dolorem illum nobis consectetur, aut laborum culpa dolore mollitia porro exercitationem blanditiis dolor laboriosam quod est corrupti provident, facere ad ut. Nobis, voluptatibus aut praesentium atque necessitatibus asperiores quidem, eaque, unde ipsam illo eos? Dignissimos dolores molestias minima ratione.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum debitis minima, ipsam aut odio quasi! Voluptatem, iusto? Ullam, sed? Labore aspernatur illum tempore provident rem, fuga ab veritatis eligendi, corrupti, quidem cupiditate atque aliquid dolorum accusantium! Voluptate facere repudiandae eligendi at odit sapiente, architecto iure sint nobis, aliquid explicabo adipisci, recusandae mollitia voluptatibus fugit? Quidem unde consectetur nisi ullam doloribus consequuntur molestias nemo vero dolore facilis officiis distinctio rerum voluptatum delectus explicabo maiores, dolorum quasi ratione quisquam necessitatibus pariatur ipsa dignissimos. Ducimus, ex consequuntur exercitationem esse dignissimos beatae sapiente explicabo expedita non inventore, repellendus totam. Cupiditate, labore! Itaque.</p>
 		</main>
 	</body>
 </html>
