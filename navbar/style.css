@@ -33,7 +33,7 @@ svg {
 	display: block;
 	width: 2rem;
 	height: 2rem;
-	stroke: var(--black);
+	stroke: var(--navy);
 }
 
 button {
@@ -91,6 +91,45 @@ a:active {
 		padding: 0.25rem;
 	}
 
+	.navigation {
+		visibility: hidden;
+		position: fixed;
+		top: 0;
+		left: -300px;
+		width: 300px;
+		max-width: 300px;
+		overflow-y: scroll;
+		height: 100dvh;
+		box-shadow: none;
+		background-color: var(--white);
+		transform: translateX(0);
+		z-index: 3;
+		transition: transform 300ms ease-in-out, visibility 300ms ease-in-out;
+	}
+
+	.menu_active .navigation {
+		visibility: visible;
+		box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 10%);
+		transform: translateX(300px);
+	}
+
+	.main_nav {
+		flex-direction: column;
+		gap: 0;
+		border-top: 1px solid var(--gray);
+	}
+
+	.main_nav li {
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid var(--gray);
+	}
+
+	.main_nav a {
+		display: block;
+		padding: 1rem;
+	}
+
 	.menu_button {
 		display: block;
 		padding: 0.5rem;
@@ -111,54 +150,11 @@ a:active {
 		background-color: var(--navy);
 	}
 
-	.menu_button svg {
-		stroke: var(--navy);
-		transition: stroke 300ms ease-in-out;
-	}
-
 	.menu_button:focus svg,
 	.menu_button:hover svg,
 	.menu_button:active svg {
 		stroke: var(--white);
-	}
-
-	.navigation {
-		visibility: hidden;
-		position: fixed;
-		top: 0;
-		left: -300px;
-		width: 300px;
-		max-width: 100%;
-		overflow-y: scroll;
-		height: 100dvh;
-		box-shadow: none;
-		background-color: var(--white);
-		transform: translateX(0);
-		z-index: 3;
-		transition: transform 300ms ease-in-out, visibility 300ms ease-in-out;
-	}
-
-	.main_nav {
-		flex-direction: column;
-		gap: 0;
-		border-top: 1px solid var(--gray);
-	}
-
-	.main_nav li {
-		width: 100%;
-		text-align: center;
-		border-bottom: 1px solid var(--gray);
-	}
-
-	.main_nav a {
-		display: block;
-		padding: 1rem;
-	}
-
-	.menu_active .navigation {
-		visibility: visible;
-		box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 10%);
-		transform: translateX(300px);
+		transition: stroke 300ms ease-in-out;
 	}
 
 	.menu_active .open_button {
