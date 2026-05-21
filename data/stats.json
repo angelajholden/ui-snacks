@@ -1,0 +1,34 @@
+[
+	{
+		"id": "monthly-revenue",
+		"label": "Monthly Revenue",
+		"value": 12840,
+		"type": "currency",
+		"change": 12.6,
+		"trend": "up"
+	},
+	{
+		"id": "active-projects",
+		"label": "Active Projects",
+		"value": 6,
+		"type": "number",
+		"change": 2,
+		"trend": "up"
+	},
+	{
+		"id": "open-invoices",
+		"label": "Open Invoices",
+		"value": 3840,
+		"type": "currency",
+		"change": -4.1,
+		"trend": "down"
+	},
+	{
+		"id": "new-leads",
+		"label": "New Leads",
+		"value": 14,
+		"type": "number",
+		"change": 8.3,
+		"trend": "up"
+	}
+]
