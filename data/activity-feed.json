@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"type": "deploy",
+		"title": "Portfolio redesign deployed",
+		"description": "Production build completed successfully.",
+		"timestamp": "2026-05-20T09:12:00Z",
+		"status": "success"
+	},
+	{
+		"id": 2,
+		"type": "invoice",
+		"title": "Invoice sent to Northstar Studio",
+		"description": "$2,400 invoice created for homepage build.",
+		"timestamp": "2026-05-20T08:30:00Z",
+		"status": "info"
+	},
+	{
+		"id": 3,
+		"type": "task",
+		"title": "QA checklist completed",
+		"description": "Responsive checks finished for client landing page.",
+		"timestamp": "2026-05-19T16:45:00Z",
+		"status": "success"
+	},
+	{
+		"id": 4,
+		"type": "lead",
+		"title": "New consulting inquiry",
+		"description": "Potential client requested a website audit.",
+		"timestamp": "2026-05-19T13:20:00Z",
+		"status": "warning"
+	},
+	{
+		"id": 5,
+		"type": "support",
+		"title": "SSL renewal reminder",
+		"description": "Certificate expires in 14 days.",
+		"timestamp": "2026-05-18T10:05:00Z",
+		"status": "danger"
+	}
+]
