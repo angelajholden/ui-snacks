@@ -13,7 +13,7 @@
 	<script type="module" src="init.js"></script>
 </head>
 
-<body>
+<body class="menu_active">
 	<header class="header">
 		<!-- use grid  - keep to the left -->
 		<div class="logo_nav-container">
@@ -44,11 +44,7 @@
 					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
 				</button>
 			</div>
-			<div class="header_item mega_container search_container">
-				<button type="button" class="button_icon">
-					<span>Mega</span>
-					<svg aria-label="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
-				</button>
+			<div class="header_item search_container">
 				<form action="" class="form search_form">
 					<label class="access-hidden" for="search">Search</label>
 					<input type="search" name="search" id="search" placeholder="Search...">
@@ -67,7 +63,7 @@
 				</button>
 			</div>
 			<div class="header_item">
-				<button type="button" class="button_icon menu_button" aria-label="Open Menu" aria-controls="mainNav" aria-expanded="false">
+				<button type="button" class="button_icon menu_button" aria-label="Open Menu" aria-controls="mainNav" aria-expanded="true">
 					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
 				</button>
 			</div>
